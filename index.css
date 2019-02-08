@@ -50,9 +50,7 @@ margin-right: 10px;
     background-color: rgb(165, 160, 160);
 }
 
-#projects img{
-width:75%;
-}
+
 
 #contact{
   background-color: grey;  
@@ -86,6 +84,13 @@ section{
     
 }
 #projects img{
-    width:75%;
-    }
+    width:100%;    
+}
+
+#projects>div{
+    flex:1;
+}
+
+#projects>.projectsContainer{
+    flex:1;
 }
