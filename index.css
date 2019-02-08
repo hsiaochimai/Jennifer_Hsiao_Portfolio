@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+body{
+    display:flex;
+    text-align: center;
+    flex-direction: column;
+}
+nav{
+    display: fixed;
+    background-color: rgb(176, 174, 179);
+}
+.hamburger{
+    display:flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+} 
+ 
+
+
+nav li{
+    display: none;
+    padding: 30px;
+}
+header{
+    background-color: rgb(128, 126, 126);
+}
+
+#bio{
+    background-color: rgb(243, 245, 247);
+}
+#bio img{
+    width:75%;
+    
+}
+.bioContainer h2{
+    margin-top: 20px;
+}
+.bioContainer p{
+margin-top: 10px;
+padding:10px;
+margin-bottom: 10px;
+text-align: left;
+margin-left: 10px;
+margin-right: 10px;
+}
+
+#projects{
+    background-color: rgb(165, 160, 160);
+}
+
+#projects img{
+width:75%;
+}
+
+#contact{
+  background-color: grey;  
+}
+
+
+@media screen and (min-width:700px){
+    body{
+        display:flex;
+        text-align: left;
+        flex-direction: column;
+    }
+
+nav{
+    display: fixed;
+    background-color: rgb(176, 174, 179);
+}
+.hamburger{
+    display:none;
+}
+nav li{
+    display: inline;
+    padding: 30px;
+}
+section{
+    display:flex;
+    flex-direction: row;
+}
+#bio img{
+    width:75%;
+    
+}
+#projects img{
+    width:75%;
+    }
+}
