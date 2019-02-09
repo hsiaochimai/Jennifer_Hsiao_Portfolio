@@ -11,24 +11,28 @@
     <nav role="navigation">
         <div class="hamburger">&#9776; </div>
         <ul class="menu">
-            <li>Welcome</li>
             <li>Bio</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <li>Portfolio</li>
+            <li>Github</li>
+            <li>LinkedIn</li>
         </ul>
     </nav>
     <header role="banner">
         <main role="main">
+            <div id="welcome">
             <h1>Jennifer Hsiao</h1>
             <p>Hi! I’m Jennifer, a full-stack developer and
                 super problem solver based in Portland, Oregon </p>
+            </div>
     </header>
-    <section id='bio'>
+    <section id='bio'class="bioColumnContainer">
         <p>
-            <img src="/static/JenEdits-001.jpg" alt="Jennifer Hsiao Picture">
+        <div class="column50">
+        <img src="static/JenEdits-001.jpg" alt="Jennifer Hsiao Picture">
         </p>
-        <div class="bioContainer">
-            <h2>Bio</h2>
+    </div>
+        <div class="column50 bioContainer">
+            <h2>Here's a little about me</h2>
 
             <p>I’m an aspiring web developer with a passion for efficiency,
                 building things and solving problems.</p>
@@ -39,21 +43,23 @@
                 or getting lost in nature.</p>
         </div>
     </section>
-    <section id='projects' class="columnContainer">
+    <section id='projects' class="projectsColumnContainer">
         <div class="column50">
-            <img src="static/National Park Quiz app.png" alt="National Parks App Picture">
+                <h1>Portfolio</h1>
+           <p> <img src="static/National Park Quiz app.png" alt="National Parks App Picture"></p>
         </div>
-        <div class="class=column50 projectsContainer">
-            <h2>Projects</h2>
-            <p><span>National Parks Quiz App</span></p>
+        <div class="column50 projectsContainer">
+            <h2><span>National Parks Quiz App</span></h2>
             <p>A fun quiz to test your National Parks knowledge. </p>
             <p>Technologies used: Javascript, CSS, HTML, jQuery </p>
         </div>
     </section>
-    <section id='contact'>
-        <h2>Contact</h2>
-    </section>
     </main>
+    <footer id="footer">
+        <ul class="contact">
+            <li>Please email me at <a href="mailto:jchmai21@gmail.com">jchmai21@gmail.com</a></li>
+        </ul>
+    </footer>
 </body>
 
 </html>

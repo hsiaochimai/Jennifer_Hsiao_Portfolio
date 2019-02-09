@@ -4,17 +4,20 @@
 }
 body{
     display:flex;
-    text-align: center;
+    /*text-align: center;*/
     flex-direction: column;
 }
 nav{
-    display: fixed;
+    position: fixed;
+    top:0;
     background-color: rgb(176, 174, 179);
+    width:100%;
 }
 .hamburger{
     display:flex;
     justify-content: flex-start;
     padding-left: 10px;
+    margin-bottom: 20px;
 } 
  
 
@@ -26,35 +29,81 @@ nav li{
 header{
     background-color: rgb(128, 126, 126);
 }
+#welcome{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 25%;
+    margin-bottom: 25%;
+}
+header h1{
+padding-bottom:10px;
+}
 
 #bio{
     background-color: rgb(243, 245, 247);
 }
 #bio img{
+    display:block;
+    margin:auto;
     width:75%;
     
 }
+.bioContainer{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    margin-bottom: 25%; 
+}
 .bioContainer h2{
     margin-top: 20px;
+    text-align: left;
 }
 .bioContainer p{
-margin-top: 10px;
-padding:10px;
-margin-bottom: 10px;
+padding-top:10px;
+padding-bottom: 10px;
 text-align: left;
-margin-left: 10px;
-margin-right: 10px;
+
 }
 
 #projects{
     background-color: rgb(165, 160, 160);
 }
-
-
-
-#contact{
-  background-color: grey;  
+#projects img{
+    width:75%;
+    display:block;
+    margin:auto;
 }
+
+.column50 h1{
+    margin-top: 10%;
+    margin-left: 10%;
+    padding-bottom: 20px;
+}
+.projectsContainer{
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 25%; 
+}
+.projectsContainer p{
+    padding-top: 10px;
+padding-bottom: 10px;
+}
+
+
+#footer{
+  background-color: grey;
+  margin-left: 0;
+ }
+ .contact {
+    margin:0;
+ }
+
+  .contact li{
+      display:inline;
+      padding:0;
+  }
+
 
 
 @media screen and (min-width:700px){
@@ -65,23 +114,42 @@ margin-right: 10px;
     }
 
 nav{
-    display: fixed;
+    position: fixed;
+    top:0;
     background-color: rgb(176, 174, 179);
+    width:100%;
 }
 .hamburger{
     display:none;
 }
+nav ul{
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
 nav li{
     display: inline;
     padding: 30px;
+    
 }
 section{
     display:flex;
     flex-direction: row;
 }
 #bio img{
-    width:75%;
+    width:100%;
     
+}
+#bio>div{
+    flex:1;
+}
+#bio>.bioContainer{
+    flex:1;
+}
+.column50{
+    margin-bottom:0;
+}
+   
 }
 #projects img{
     width:100%;    
@@ -93,4 +161,14 @@ section{
 
 #projects>.projectsContainer{
     flex:1;
+}
+.projectsColumnContainer h1{
+    margin-left: 10%;
+}
+.projectsContainer{
+    padding-top: 10px;
+}
+.contact{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
