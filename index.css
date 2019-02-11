@@ -14,6 +14,7 @@ nav{
     width:100%;
     z-index: 1;
 }
+
 .hamburger{
     display:flex;
     justify-content: flex-start;
@@ -24,22 +25,20 @@ nav{
  
 
 
-nav li{
+nav button{
     font-family: 'Work Sans', sans-serif;
     display: none;
-    padding: 30px;
-    font-size: 12px;
-}
-/*header{
-    /*background-color: #5E42A6;
-    background-image: url("https://images.unsplash.com/photo-1438955224980-4f333574560d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1525&q=80");
-    background-size:cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    opacity:0.5;
-    filter:opacity(50%);
+
     
-}*/
+}
+nav button:hover{
+    background-color: #966B9D;
+}
+nav a{
+    color:#FBFEF9;
+}
+
+
 header{
     width: 100%;
     display: block;
@@ -174,15 +173,21 @@ nav{
     display:none;
 }
 nav ul{
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
-    margin-bottom: 20px;
-}
-nav li{
-    display: inline;
-    padding: 30px;
-    font-size: 16px;
+    margin-bottom: 10px; 
     
+}
+nav button{
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 16px;
+    background: transparent;
+    border:none;
+    margin:0;
 }
 section{
     display:flex;
@@ -269,10 +274,11 @@ line-height: 24px;
         margin-bottom: 20px;
         padding:0;
     }
-    nav li{
-        padding: 30px 8px 30px 16px;
+    nav button{
+        padding-top: 10px;
+        padding-bottom: 10px;
         font-size:24px;
-        display: inline-block;
+        
     }
 }
 
