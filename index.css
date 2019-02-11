@@ -23,15 +23,39 @@ nav{
 
 } 
  
-
-
-nav button{
-    font-family: 'Work Sans', sans-serif;
-    display: none;
-
-    
+.menu{
+    position:absolute;
+    top:20px;
+    left:0px;
+    width:30vw;    
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
 }
-nav button:hover{
+
+.hidden{
+    display:none;
+}
+
+nav li{
+    background:black;
+    padding:.3em;
+    font-family: 'Work Sans', sans-serif;
+    /* display: none; */
+    display:block;
+    width:100%;
+    margin-bottom:.3em;    
+}
+
+nav li a{
+    text-decoration:none;
+}
+
+nav li:hover{
     background-color: #966B9D;
 }
 nav a{

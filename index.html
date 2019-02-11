@@ -4,6 +4,7 @@
 <head>
     <title>Jennifer Hsiao</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="index.css">
@@ -12,28 +13,28 @@
 <body>
     <nav role="navigation">
         <div class="hamburger">&#9776; </div>
-        <ul class="menu">
-            <button><a href="#bio">Bio</a></button>
-            <button><a href="#projects">Portfolio</a></button>
-            <button><a href="https://github.com/hsiaochimai" target="_blank">Github</a></button>
-            <button><a href="https://www.linkedin.com/in/jennifer-hsiao-/" target="_blank">LinkedIn</a></button
+        <ul class="menu hidden">
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#projects">Portfolio</a></li>
+            <li><a href="https://github.com/hsiaochimai" target="_blank">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/jennifer-hsiao-/" target="_blank">LinkedIn</a></li>
         </ul>
     </nav>
-    <header role="banner">    
+    <header role="banner">
         <main role="main">
-                <div id="welcome">
-            <h1>Jennifer Hsiao</h1>
-            <p>Hi! I’m Jennifer, a full-stack developer and
-                super problem solver based in Portland, Oregon </p>
+            <div id="welcome">
+                <h1>Jennifer Hsiao</h1>
+                <p>Hi! I’m Jennifer, a full-stack developer and
+                    super problem solver based in Portland, Oregon </p>
             </div>
     </header>
 
-    <section id='bio'class="bioColumnContainer">
+    <section id='bio' class="bioColumnContainer">
         <p>
-        <div class="column50">
-        <img src="static/JenEdits-001.jpg" alt="Jennifer Hsiao Picture">
+            <div class="column50">
+                <img src="static/JenEdits-001.jpg" alt="Jennifer Hsiao Picture">
         </p>
-    </div>
+        </div>
         <div class="column50 bioContainer">
             <h2>Here's a little about me</h2>
 
@@ -48,8 +49,8 @@
     </section>
     <section id='projects' class="projectsColumnContainer">
         <div class="column50">
-                <h1>Portfolio</h1>
-           <p> <img src="static/National Park Quiz app.png" alt="National Parks App Picture"></p>
+            <h1>Portfolio</h1>
+            <p> <img src="static/National Park Quiz app.png" alt="National Parks App Picture"></p>
         </div>
         <div class="column50 projectsContainer">
             <h2><span>National Parks Quiz App</span></h2>
@@ -65,6 +66,10 @@
             <li>Please email me at <a href="mailto:jchmai21@gmail.com">jchmai21@gmail.com</a></li>
         </ul>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+
 </body>
 
 </html>
