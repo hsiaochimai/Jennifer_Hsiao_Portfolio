@@ -40,15 +40,13 @@ nav{
 }
 
 .hidden{
-    /* display:none; */
     left:-30vw;
 }
 
 nav li{
-    background:black;
+    background:#533A71;
     padding:.3em;
     font-family: 'Work Sans', sans-serif;
-    /* display: none; */
     display:block;
     width:100%;
     margin-bottom:.3em;    
@@ -165,7 +163,12 @@ line-height: 22px;
 padding-bottom: 10px;
 line-height: 22px;
 }
-
+.projectsContainer a:link{
+    color:#FBFEF9
+}
+.projectsContainer a:hover{
+    background-color: #966B9D
+}
 
 #footer{
   background-color: #5E42A6;
@@ -193,29 +196,28 @@ line-height: 22px;
 nav{
     position: fixed;
     top:0;
-    /*background-color: rgb(176, 174, 179);*/
     width:100%;
 }
+
 .hamburger{
     display:none;
 }
-nav ul{
-    margin-top: 10px;
-    text-align: center;
-    margin-bottom: 10px; 
-    
+.menu{
+    transition: none;
+    position:relative;
+    top:0px;
+    left:auto;
+    width:30vw;    
+    display: flex;
+    flex-direction: row;
+    list-style-type: disc;
+    margin-block-start: auto;
+    margin-block-end: auto;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+   
 }
-nav button{
-    display: inline-block;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 0;
-    padding-bottom: 0;
-    font-size: 16px;
-    background: transparent;
-    border:none;
-    margin:0;
-}
+
 section{
     display:flex;
     flex-direction: row;
@@ -295,17 +297,21 @@ line-height: 24px;
         padding-top: 20px;
         
     }
-    nav ul{
-        margin-top: 20px;
-        text-align: left;
-        margin-bottom: 20px;
-        padding:0;
-    }
-    nav button{
-        padding-top: 10px;
-        padding-bottom: 10px;
+    .menu{
+        transition: none;
+        position:relative;
+        top:0px;
+        left:auto;
+        width:30vw;    
+        display: flex;
+        flex-direction: column;
+        list-style-type: disc;
+        margin-block-start: auto;
+        margin-block-end: auto;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
         font-size:24px;
-        
+       
     }
 }
 
