@@ -10,7 +10,7 @@ body{
 nav{
     position: fixed;
     top:0;
-    background-color: rgb(176, 174, 179);
+    background-color: #533A71;
     width:100%;
 }
 .hamburger{
@@ -18,29 +18,68 @@ nav{
     justify-content: flex-start;
     padding-left: 10px;
     margin-bottom: 20px;
+
 } 
  
 
 
 nav li{
+    font-family: 'Work Sans', sans-serif;
     display: none;
     padding: 30px;
+    font-size: 12px;
 }
+/*header{
+    /*background-color: #5E42A6;
+    background-image: url("https://images.unsplash.com/photo-1438955224980-4f333574560d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1525&q=80");
+    background-size:cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    opacity:0.5;
+    filter:opacity(50%);
+    
+}*/
 header{
-    background-color: rgb(128, 126, 126);
+    width: 100%;
+    display: block;
+    position: relative;  
+}
+header::after{
+    z-index: -1;
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    opacity: 0.5;
+    background-image: url("https://images.unsplash.com/photo-1438955224980-4f333574560d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1525&q=80"); 
+    background-size:cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 #welcome{
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 25%;
     margin-bottom: 25%;
-}
-header h1{
-padding-bottom:10px;
-}
+    /*font-weight: bold;
+    color:black;*/
 
+}
+main h1{
+font-family: 'Work Sans', sans-serif;
+padding-bottom:10px;
+font-size: 32px;
+line-height: 40px;
+}
+main p{
+    font-family: 'Bitter', serif;
+    font-size:20px;
+    line-height: 24px;
+}
 #bio{
-    background-color: rgb(243, 245, 247);
+    background-color: #8884FF;
 }
 #bio img{
     display:block;
@@ -55,18 +94,22 @@ padding-bottom:10px;
     margin-bottom: 25%; 
 }
 .bioContainer h2{
+    font-family: 'Work Sans', sans-serif;
     margin-top: 20px;
     text-align: left;
+    
 }
 .bioContainer p{
+font-family: 'Bitter', serif;
 padding-top:10px;
 padding-bottom: 10px;
 text-align: left;
+line-height: 22px;
 
 }
 
 #projects{
-    background-color: rgb(165, 160, 160);
+    background-color: #1B9AAA;
 }
 #projects img{
     width:75%;
@@ -75,6 +118,7 @@ text-align: left;
 }
 
 .column50 h1{
+    font-family: 'Work Sans', sans-serif;
     margin-top: 10%;
     margin-left: 10%;
     padding-bottom: 20px;
@@ -85,14 +129,19 @@ text-align: left;
     margin-right: 10%;
     margin-bottom: 25%; 
 }
+.projectsContainer h2{
+    font-family: 'Work Sans', sans-serif;
+}
 .projectsContainer p{
+    font-family: 'Bitter', serif;
     padding-top: 10px;
 padding-bottom: 10px;
+line-height: 22px;
 }
 
 
 #footer{
-  background-color: grey;
+  background-color: #5E42A6;
   margin-left: 0;
  }
  .contact {
@@ -100,6 +149,7 @@ padding-bottom: 10px;
  }
 
   .contact li{
+    font-family: 'Bitter', serif;
       display:inline;
       padding:0;
   }
@@ -116,7 +166,7 @@ padding-bottom: 10px;
 nav{
     position: fixed;
     top:0;
-    background-color: rgb(176, 174, 179);
+    /*background-color: rgb(176, 174, 179);*/
     width:100%;
 }
 .hamburger{
@@ -130,6 +180,7 @@ nav ul{
 nav li{
     display: inline;
     padding: 30px;
+    font-size: 16px;
     
 }
 section{
