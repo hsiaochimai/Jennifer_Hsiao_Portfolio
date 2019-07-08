@@ -78,7 +78,7 @@ header::after{
     right: 0;
     position: absolute;
     opacity: 0.5;
-    background-image: url("https://images.unsplash.com/photo-1438955224980-4f333574560d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1525&q=80"); 
+    background-image: url("static/Portland-background.jpeg"); 
     background-size:cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -136,6 +136,10 @@ line-height: 22px;
 #projects{
     
    background-color: #8884FF;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 #projects img{
     width:75%;
@@ -146,16 +150,23 @@ line-height: 22px;
 #projects h1{
     font-family: 'Work Sans', sans-serif;
     margin-top: 10%;
-    /* margin-left: 10%; */
-    padding-bottom: 20px;
     text-align: center;
 }
-.projectsContainer{
-    margin-top: 10%;
+.projectCardContainer{
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 25%; 
     background-color: #1B9AAA;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;
+border-radius: 5px;
+}
+.projectsContainer{
+    margin-top: 1rem;
+    padding: 2rem 1.5rem;
+}
+.projectCardContaine:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .projectsContainer h2{
     font-family: 'Work Sans', sans-serif;
@@ -166,6 +177,7 @@ line-height: 22px;
     padding-top: 10px;
 padding-bottom: 10px;
 line-height: 22px;
+
 }
 .projectsContainer a:link{
     color:#FBFEF9
@@ -173,7 +185,9 @@ line-height: 22px;
 .projectsContainer a:hover{
     background-color: #966B9D
 }
-
+.project-card{
+ padding:2em;   
+}
 #footer{
   background-color: #5E42A6;
   margin-left: 0;
@@ -182,14 +196,30 @@ line-height: 22px;
     margin:0;
  }
 
-  .contact li{
+  .contact h1{
     font-family: 'Bitter', serif;
-      display:inline;
+      text-align: center;
       padding:0;
   }
+  .contact-icons{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;  
+  }
+  .contact-icons a:link {
+    color: #0D0D0D;
+}
 
-
-
+  
+  .contact-icons a:visited {
+    color: #0D0D0D;
+  }
+.contact-icons a:hover{
+    transition: all .2s;
+-o-transition: all .2s;
+-moz-transition: all .2s;
+-webkit-transition: all .2s;
+}
 @media screen and (min-width:700px){
     body{
         display:flex;
@@ -266,18 +296,23 @@ line-height: 24px;
     width:100%;    
 }
 
-#projects>div{
+/* #projects>div{
     flex:1;
 }
 
 #projects>.projectsContainer{
     flex:1;
-}
-.projectsColumnContainer h1{
-    margin-left: 10%;
-}
-.projectsContainer{
-    padding-top: 10px;
+} */
+
+/* .projectsContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+   
+} */
+.projectCardContainer{
+    margin-left: 0.75rem;
+    max-width: 55ch;
 }
 .contact{
     margin-top: 20px;
@@ -315,6 +350,12 @@ line-height: 24px;
         margin-inline-start: auto;
         margin-inline-end: auto;
         font-size:24px;
+       
+    }
+    .projectsContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-evenly;
        
     }
 }
