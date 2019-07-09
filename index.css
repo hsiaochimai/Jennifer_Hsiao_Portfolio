@@ -6,6 +6,7 @@ body{
     display:flex;
     /*text-align: center;*/
     flex-direction: column;
+    min-width:320px;
 }
 nav{
     position: fixed;
