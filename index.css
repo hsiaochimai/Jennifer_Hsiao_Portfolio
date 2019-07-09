@@ -7,6 +7,7 @@ body{
     /*text-align: center;*/
     flex-direction: column;
     min-width:320px;
+    
 }
 nav{
     position: fixed;
@@ -182,6 +183,9 @@ line-height: 22px;
 
 }
 .projectsContainer a:link{
+    color:#FBFEF9
+}
+.projectsContainer a:visited{
     color:#FBFEF9
 }
 .projectsContainer a:hover{
