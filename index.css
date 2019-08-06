@@ -19,9 +19,11 @@ nav{
 
 .hamburger{
     text-decoration: none;
+    font-size: 24px;
     display:flex;
     justify-content: flex-start;
-    padding-left: 10px;
+    padding-left: 15px;
+    padding-top: 10px;
     margin-bottom: 20px;
 
 } 
@@ -29,7 +31,7 @@ nav{
 .menu{
     transition: all 0.5s;
     position:absolute;
-    top:20px;
+    top: 40px;
     left:0px;
     width:30vw;    
     display: block;
@@ -50,12 +52,14 @@ nav li{
     padding:.3em;
     font-family: 'Work Sans', sans-serif;
     display:block;
-    width:100%;
+    padding: 1em;
+    /* width:100%; */
     margin-bottom:.3em;    
 }
 
 nav li a{
     text-decoration:none;
+    font-size: 18px;
 }
 
 nav li:hover{
@@ -121,9 +125,9 @@ main p{
     margin-top: 10%;
      /* margin-bottom: 25%; */
 }
-.bioContainer h2{
+.bioContainer h1{
     font-family: 'Work Sans', sans-serif;
-    margin-top: 20px;
+    margin-top: 60px;
     text-align: center;
     
 }
@@ -152,7 +156,7 @@ line-height: 22px;
 
 #projects h1{
     font-family: 'Work Sans', sans-serif;
-    margin-top: 10%;
+    margin-top: 60px;
     text-align: left;
 }
 .projectCardContainer{
@@ -250,6 +254,7 @@ nav{
     width:30vw;    
     display: flex;
     flex-direction: row;
+    justify-content: center;
     list-style-type: disc;
     margin-block-start: auto;
     margin-block-end: auto;
@@ -357,6 +362,9 @@ line-height: 24px;
         margin-inline-end: auto;
         font-size:24px;
        
+    }
+    nav li{
+        padding:0.3em;
     }
     .projectsContainer{
         display: grid;
