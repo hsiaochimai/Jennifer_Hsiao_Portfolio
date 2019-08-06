@@ -27,7 +27,9 @@ nav{
     margin-bottom: 20px;
 
 } 
- 
+ main{
+     margin-top:0px;
+ }
 .menu{
     transition: all 0.5s;
     position:absolute;
@@ -98,14 +100,14 @@ header::after{
     color:black;*/
 
 }
-main h1{
+#welcome h1{
 font-family: 'Work Sans', sans-serif;
 padding-bottom:10px;
 font-size: 32px;
 line-height: 40px;
 text-align:center;
 }
-main p{
+#welcome p{
     font-family: 'Bitter', serif;
     font-size:20px;
     line-height: 24px;
@@ -273,11 +275,11 @@ nav{
     margin-top: 10%;
     margin-bottom: 10%;
 }
-main h1{
+#welcome h1{
     font-size: 48px;
     line-height: 56px;
 }
-main p{
+#welcome p{
     font-size:24px;
     line-height: 30px;
 }
