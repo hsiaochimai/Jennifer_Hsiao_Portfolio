@@ -1,118 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Jennifer Hsiao</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bitter"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="index.css" />
     <script src="https://kit.fontawesome.com/5ee820af0c.js"></script>
+  </head>
 
-</head>
-
-<body>
-        
+  <body>
     <nav>
-        <a href="#menu" class="hamburger">&#9776;</a>
-        <ul id="menu" class="menu hidden">
-            <li><a href="#bio">Bio</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+      <a href="#menu" class="hamburger">&#9776;</a>
+      <ul id="menu" class="menu hidden">
+        <li><a href="#bio">Bio</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
 
-<header >
-        
-           
-            <div id="welcome">
-                <h1>Jennifer Hsiao</h1>
-                <p>Hi! I’m Jennifer, a full-stack developer and
-                    super problem solver based in Portland, Oregon </p>
-            </div>
-   
-        </header>
-        <!-- <main role="main"> -->
-    <section id='bio' class="bioColumnContainer">
-    
-        <div class="column50 bioContainer">
-            <h1>Here's a little about me</h1>
+    <header>
+      <div id="welcome">
+        <h1>Jennifer Hsiao</h1>
+        <p>
+          Hi! I’m Jennifer, a full-stack developer and super problem solver
+          based in Portland, Oregon
+        </p>
+      </div>
+    </header>
+    <!-- <main role="main"> -->
+    <section id="bio" class="bioColumnContainer">
+      <div class="column50 bioContainer">
+        <h1>Here's a little about me</h1>
 
-            <p>I’m an aspiring web developer with a passion for efficiency,
-                building things and solving problems.</p>
-            <p>After studying Anthropology, learning Mandarin and
-                living in Taiwan for over 5 years, tenacity runs in my blood.
-                I never give up on difficult task, and I LOVE LEARNING. </p>
-            <p>When I am not coding, I am going on adventures, finding the humor in life,
-                or getting lost in nature.</p>
-        </div>
+        <p>
+          I’m full-stack developer with a passion for building efficient and
+          innovative products that provides an impeccable user experience.
+        </p>
+        <p>
+          After studying Anthropology, learning Mandarin and living in Taiwan
+          for over 5 years, tenacity runs in my blood. I never give up on
+          difficult task, and I LOVE LEARNING.
+        </p>
+        <p>
+          When I am not coding, I am going on adventures, finding the humor in
+          life, or getting lost in nature.
+        </p>
+      </div>
     </section>
-    <section id='projects' class="projectsColumnContainer"> 
-            <h1>Projects</h1>
-            <section class='column50 projectsContainer'>
-                    <section class='projectCardContainer'>
-                            <img src="static/Lioness-app.png" alt="Lioness App Picture">
-                            <div class='project-card'>
-                            <h2><span>Lioness App</span></h2>
-                            <p>A full-stack app  that allows users to manage their organization's projects based on which phase they are in, being estimate, in progress or billed. Lioness also manages the people working on projects based on their role of project manager, client, or contractor. </p>
-                            <p>Technologies used: React, Node.js, Postgres, Knex.js, HTML, CSS, Javascript  </p>
-                            <p><a href="https://lioness-app.jchmai21.now.sh/login">Live</a></p>
-                            <p><a href="https://github.com/hsiaochimai/lioness-app">Github Client-Side</a></p>
-                            <p><a href="https://github.com/hsiaochimai/lioness-server">Github Server-Side</a></p>
-                        </div>
-                    </section>
-                    <section class='projectCardContainer'>
-                            <img src="static/Where-to-go-app.png" alt="Where-to-go app picture">
-                            <div class='project-card'>
-                            <h2><span>Where to go App</span></h2>
-                            <p>A full-stack app that allows users to manage their upcoming trips by storing places they want to visit. </p>
-                            <p>Technologies used: React, Node.js, Postgres, Knex.js, HTML, CSS, Javascript  </p>
-                            <p><a href="https://where-to-go-app.jchmai21.now.sh">Live</a></p>
-                            <p><a href="https://github.com/hsiaochimai/where-to-go">Github Client-Side</a></p>
-                            <p><a href="https://github.com/hsiaochimai/where-to-go-server">Github Server-Side</a></p>
-                        </div>
-                    </section>
-                    <section class='projectCardContainer'>
-                            <img src="static/QOL-app.png" alt="Quality of life App Picture">
-                            <div class='project-card'>
-                            <h2><span>Quality of Life App</span></h2>
-                            <p>An app to help users see the quality of life based on their current location or a selected city, by accessing the Teleport API to get city scores based on 17 categories : Housing	,Cost of Living	,Startups, Venture Capital, Travel Connectivity, Commute, Business Freedom, Safety, Healthcare, Education, Environmental, Economy, Taxation, Internet Access, Leisure & Culture, Tolerance, Outdoors. </p>
-                            <p>Technologies used: Javascript, CSS, HTML, jQuery </p>
-                            <p><a href="https://hsiaochimai.github.io/City-quality-of-life/">Live</a></p>
-                            <p><a href="https://github.com/hsiaochimai/City-quality-of-life">Github</a></p>
-                        </div>
-                    </section>
-                    <section class='projectCardContainer'>
-            <img src="static/National-Park-Quiz-App.png" alt="National Parks App Picture">
-            <div class='project-card'>
+    <section id="projects" class="projectsColumnContainer">
+      <h1>Projects</h1>
+      <section class="column50 projectsContainer">
+        <section class="projectCardContainer">
+          <img src="static/Lioness-app.png" alt="Lioness App Picture" />
+          <div class="project-card">
+            <h2><span>Lioness App</span></h2>
+            <p>
+              A full-stack app that allows users to manage their organization's
+              projects based on which phase they are in, being estimate, in
+              progress or billed. Lioness also manages the people working on
+              projects based on their role of project manager, client, or
+              contractor.
+            </p>
+            <p>
+              Technologies used: React, Node.js, Postgres, Knex.js, HTML, CSS,
+              Javascript
+            </p>
+            <p><a href="https://lioness-app.jchmai21.now.sh/login">Live</a></p>
+            <p>
+              <a href="https://github.com/hsiaochimai/lioness-app"
+                >Github Client-Side</a
+              >
+            </p>
+            <p>
+              <a href="https://github.com/hsiaochimai/lioness-server"
+                >Github Server-Side</a
+              >
+            </p>
+          </div>
+        </section>
+        <section class="projectCardContainer">
+          <img src="static/Where-to-go-app.png" alt="Where-to-go app picture" />
+          <div class="project-card">
+            <h2><span>Where to go App</span></h2>
+            <p>
+              A full-stack app that allows users to manage their upcoming trips
+              by storing places they want to visit.
+            </p>
+            <p>
+              Technologies used: React, Node.js, Postgres, Knex.js, HTML, CSS,
+              Javascript
+            </p>
+            <p><a href="https://where-to-go-app.jchmai21.now.sh">Live</a></p>
+            <p>
+              <a href="https://github.com/hsiaochimai/where-to-go"
+                >Github Client-Side</a
+              >
+            </p>
+            <p>
+              <a href="https://github.com/hsiaochimai/where-to-go-server"
+                >Github Server-Side</a
+              >
+            </p>
+          </div>
+        </section>
+        <section class="projectCardContainer">
+          <img src="static/QOL-app.png" alt="Quality of life App Picture" />
+          <div class="project-card">
+            <h2><span>Quality of Life App</span></h2>
+            <p>
+              An app to help users see the quality of life based on their
+              current location or a selected city, by accessing the Teleport API
+              to get city scores based on 17 categories : Housing ,Cost of
+              Living ,Startups, Venture Capital, Travel Connectivity, Commute,
+              Business Freedom, Safety, Healthcare, Education, Environmental,
+              Economy, Taxation, Internet Access, Leisure & Culture, Tolerance,
+              Outdoors.
+            </p>
+            <p>Technologies used: Javascript, CSS, HTML, jQuery</p>
+            <p>
+              <a href="https://hsiaochimai.github.io/City-quality-of-life/"
+                >Live</a
+              >
+            </p>
+            <p>
+              <a href="https://github.com/hsiaochimai/City-quality-of-life"
+                >Github</a
+              >
+            </p>
+          </div>
+        </section>
+        <section class="projectCardContainer">
+          <img
+            src="static/National-Park-Quiz-App.png"
+            alt="National Parks App Picture"
+          />
+          <div class="project-card">
             <h2><span>National Parks Quiz App</span></h2>
-            <p>A fun quiz to test your National Parks knowledge. </p>
-            <p>Technologies used: Javascript, CSS, HTML, jQuery </p>
-            <p><a href="https://hsiaochimai.github.io/National-Parks-Quiz-App/">Live</a></p>
-            <p><a href="https://github.com/hsiaochimai/National-Parks-Quiz-App">Github</a></p>
-        </div>
-    </section>
-
-   
-    </section>
-
+            <p>A fun quiz to test your National Parks knowledge.</p>
+            <p>Technologies used: Javascript, CSS, HTML, jQuery</p>
+            <p>
+              <a href="https://hsiaochimai.github.io/National-Parks-Quiz-App/"
+                >Live</a
+              >
+            </p>
+            <p>
+              <a href="https://github.com/hsiaochimai/National-Parks-Quiz-App"
+                >Github</a
+              >
+            </p>
+          </div>
+        </section>
+      </section>
     </section>
     <!-- </main> -->
     <footer id="footer">
-        <section id="contact" class="contact">
-            <h1>Contact</h1>
-            <div class="contact-icons">
-            <a href="https://github.com/hsiaochimai"> <i class="fab fa-github fa-5x"></i></a>
-            <a href="mailto:jchmai21@gmail.com"><i class="fas fa-envelope fa-5x"></i></a>
-            <a href="https://www.linkedin.com/in/jennifer-hsiao21"><i class="fab fa-linkedin fa-5x"></i></a>
+      <section id="contact" class="contact">
+        <h1>Contact</h1>
+        <div class="contact-icons">
+          <a href="https://github.com/hsiaochimai">
+            <i class="fab fa-github fa-5x"></i
+          ></a>
+          <a href="mailto:jchmai21@gmail.com"
+            ><i class="fas fa-envelope fa-5x"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/jennifer-hsiao21"
+            ><i class="fab fa-linkedin fa-5x"></i
+          ></a>
         </div>
-        </section>
+      </section>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="index.js"></script>
-
-</body>
-
+  </body>
 </html>
